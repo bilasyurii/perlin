@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Perlin" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Release">
+				<Option output="bin/Release/Perlin" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-std=c++11" />
+					<Add directory="D:/lib/sfml242/include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="sfml-system-s" />
+					<Add library="sfml-window-s" />
+					<Add library="sfml-graphics-s" />
+					<Add library="opengl32" />
+					<Add library="freetype" />
+					<Add library="jpeg" />
+					<Add library="winmm" />
+					<Add library="gdi32" />
+					<Add directory="D:/lib/sfml242/lib" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-std=c++11" />
+			<Add option="-DSFML_STATIC" />
+			<Add directory="D:/lib/sfml242/include" />
+		</Compiler>
+		<Linker>
+			<Add library="sfml-system-s" />
+			<Add library="sfml-window-s" />
+			<Add library="sfml-graphics-s" />
+			<Add library="opengl32" />
+			<Add library="freetype" />
+			<Add library="jpeg" />
+			<Add library="winmm" />
+			<Add library="gdi32" />
+			<Add directory="D:/lib/sfml242/lib" />
+		</Linker>
+		<Unit filename="main.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

@@ -1,0 +1,6 @@
+*.depend
+*.layout
+extras
+Release
+/main_copy.cpp
+/main_copy2.cpp
